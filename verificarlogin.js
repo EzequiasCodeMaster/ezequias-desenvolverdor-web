@@ -8,7 +8,6 @@ function verificarLogin() {
     const senha = document.getElementById("senha").value;
 
     if (email === emailPreCadastrado && senha === senhaPreCadastrada) {
-        alert("Login bem-sucedido!");
 
         // Salva o estado de autenticação no localStorage
         localStorage.setItem("autenticado", "true");
