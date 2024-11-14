@@ -1,0 +1,14 @@
+@media (min-width: 481px) {
+    section {
+        width: 390px;
+        height: 860px;
+        margin-top:240px;
+        border-radius: 5px;
+        border: 1px solid #303030;
+    }
+}
+
+.letrassup::before {
+    background-size: center ;
+    margin-left: 1.3%;
+}

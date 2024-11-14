@@ -1,109 +1,117 @@
-:root {
-    --netflix-black: #141414; /* Fundo preto característico da Netflix */
-    --netflix-red: #e50914; /* Vermelho oficial da Netflix */
-    --netflix-white: #ffffff; /* Branco para texto e contraste */
-    --netflix-gray: #808080; /* Cinza para textos secundários */
-    --netflix-dark-gray: #303030; /* Cinza escuro para menus e navegação */
-    --highlight-yellow: #ffd700; /* Amarelo para destaques ou notificações */
-    --highlight-blue: #0073e6; /* Azul claro para alguns botões e indicações */
-    --highlight-green: #00c7b1; /* Verde para ícones de disponibilidade ou sucesso */
-    --highlight-purple: #8d3fd6; /* Roxo, frequentemente usado em banners */
+
+
+::-webkit-scrollbar{
+    display: none;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
 body {
     display: flex;
     justify-content: center;
-    width: 100dvw;
-    height: 100dvh;
+    align-items: center; /* Alinha o conteúdo verticalmente no centro da página */
+    width: 100vw;
+    height: 100vh;
     background-color: #000000f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 section {
     width: 396px;
-    height: 830px;
-    margin-top:2px;
-
+    height: auto;
+    margin-top: 2px;
     border-radius: 5px;
-   
+    overflow: hidden; /* Garante que a imagem de fundo não ultrapasse o container */
 }
 
 .letrassup {
     width: 100%;
     height: 300px;
     color: #e50914;
+    position: relative; /* Torna o container pai relativo para controle de posição */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto */
+    justify-content: center; /* Centraliza horizontalmente o texto */
 }
 
 .letrassup::before {
-    content: ""; /* Necessário para o pseudo-elemento aparecer */
+    content: "";
     position: absolute;
-    top: 5%;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 54%;
+    bottom: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0)), url(imagens/eu.jpg) no-repeat;
     background-position: center top;
-    background-size: 390px auto;
-    opacity: 0.5; /* Controle da opacidade (corrigido para 0.5 em vez de 05) */
-    z-index: -1; /* Coloca a imagem atrás do conteúdo de .letrassup */
-    border-radius: 5px;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-
+section h1 {
+    font-size: 1.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e50914;
+    margin-left: 5px;
+}
 
 .formulario h1 {
     font-size: 2.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 10px 10px;
+    margin: 10px 15px;
     color: white;
+    text-align: left; /* Centraliza o título */
 }
 
 form {
     color: white;
+    padding: 10px; /* Adiciona um pouco de espaço interno */
     border-bottom: 1px solid #808080;
-    
 }
 
 input {
-    width: 95%;
+    width: 90%;
     height: 50px;
     background-color: #141414;
     color: white;
     border-radius: 15px;
-    border: 0px;
-    margin: 8px;
+    border: none;
+    margin: 5px;
+    padding: 0 15px;
 }
 
 #entrar {
+    width: 98%;
     background-color: #e50914;
     color: #ffffff;
+    cursor: pointer;
 }
 
 #radio {
     width: 20px;
+    height: 20px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 label {
     display: flex;
-    flex-flow: row;
-    text-align: center;
     align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .footer {
     width: 100%;
     color: #ffffff;
-    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .letraspai {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
+    text-align: center;
 }
