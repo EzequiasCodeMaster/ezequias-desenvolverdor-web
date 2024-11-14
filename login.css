@@ -1,0 +1,107 @@
+:root {
+    --netflix-black: #141414; /* Fundo preto característico da Netflix */
+    --netflix-red: #e50914; /* Vermelho oficial da Netflix */
+    --netflix-white: #ffffff; /* Branco para texto e contraste */
+    --netflix-gray: #808080; /* Cinza para textos secundários */
+    --netflix-dark-gray: #303030; /* Cinza escuro para menus e navegação */
+    --highlight-yellow: #ffd700; /* Amarelo para destaques ou notificações */
+    --highlight-blue: #0073e6; /* Azul claro para alguns botões e indicações */
+    --highlight-green: #00c7b1; /* Verde para ícones de disponibilidade ou sucesso */
+    --highlight-purple: #8d3fd6; /* Roxo, frequentemente usado em banners */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #000000f5;
+}
+
+section {
+    width: 396px;
+    height: 830px;
+    margin-top:10px;
+    border: 1px solid #fff4f4;
+    border-radius: 5px;
+   
+}
+
+.letrassup {
+    width: 100%;
+    height: 300px;
+    color: #e50914;
+}
+
+.letrassup::before {
+    content: ""; /* Necessário para o pseudo-elemento aparecer */
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 54%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0)), url(imagens/eu.jpg) no-repeat;
+    background-position: center top;
+    background-size: 390px auto;
+    opacity: 0.5; /* Controle da opacidade (corrigido para 0.5 em vez de 05) */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo de .letrassup */
+    border-radius: 5px;
+}
+
+
+.formulario h1 {
+    font-size: 2.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 10px;
+    color: white;
+}
+
+form {
+    color: white;
+    border-bottom: 1px solid #808080;
+    
+}
+
+input {
+    width: 95%;
+    height: 50px;
+    background-color: #141414;
+    border-radius: 15px;
+    border: 0px;
+    margin: 8px;
+}
+
+#entrar {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+#radio {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+label {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    color: #ffffff;
+    margin: 10px 10px;
+}
+
+.letraspai {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
