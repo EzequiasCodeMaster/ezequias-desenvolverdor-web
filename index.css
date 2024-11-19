@@ -1,0 +1,30 @@
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #000000;
+    --netflix-dark-gray: #221F1F;
+    --netflix-light-gray: #B3B3B3;
+    --netflix-white: #FFFFFF;
+  }
+
+  body {
+    background-color: #000000;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100dvw;
+    height: 100px;
+    background-color: #221F1F;
+  }
+
+  .menu {
+    margin: 15px 0px;
+  }
+
+  a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 15px;
+  }

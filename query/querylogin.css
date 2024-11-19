@@ -1,3 +1,13 @@
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #000000;
+    --netflix-dark-gray: #221F1F;
+    --netflix-light-gray: #B3B3B3;
+    --netflix-white: #FFFFFF;
+  }
+  
+
+
 @media (min-width: 481px) {
     section {
         width: 390px;
