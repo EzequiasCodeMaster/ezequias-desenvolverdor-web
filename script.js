@@ -25,3 +25,8 @@ function enableHorizontalScroll(containerId) {
 enableHorizontalScroll('container-web');
 enableHorizontalScroll('container-mobile');
 enableHorizontalScroll('container-games');
+
+
+
+//animação de rolagem
+
