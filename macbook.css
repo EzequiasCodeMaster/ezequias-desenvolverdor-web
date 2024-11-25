@@ -1,3 +1,14 @@
+
+@media (min-width:1024px) and (max-width:1920px) {
+    
+
+/*esconde*/
+.esconder {
+    display: block;
+}
+
+
+
 :root {
     --netflix-red: #E50914;
     --netflix-black: #000000;
@@ -12,7 +23,6 @@
 
   body {
     background-color: #000000;
-    cursor: url(imagens/eu-pequeno.jpg), auto;
     
   }
 
@@ -23,42 +33,51 @@
     height: 100vh;
     z-index: 2;
   }
-  
-  
-  .letrav h3 {
-    position:absolute ;
-    top: 5px;
-    font-family: monospace;
-    color: #E50914;
-    margin-top: 0px;
-    margin-left: 18px;
-    font-size: 1.3em;
-  }
 
   .menu {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     height: 100px;
+    margin: 10px -30px;
   }
 
-  .menulinks {
-    margin-top: 30px;
+  .letrav {
+    position: relative;
+    font-family: monospace;
+    font-size: 1.5em;
+    color: #E50914;
   }
+
+  .letrav h3 {
+    position:absolute ;
+    top: 5px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 1.5em;
+  }
+
+  @keyframes growFont {
+    0% {
+        font-size: 1.5em; /* Tamanho inicial */
+    }
+    100% {
+        font-size: 2em; /* Tamanho final */
+    }
+}
 
  header .menu a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #FFFFFF;
     text-decoration: none;
-    font-size: .9em;
-    margin: 2px;
-    text-shadow:2px 2px 3px #e509147a;
-    transition: font-size 1s;
+    font-size: 2.5em;
+    margin: 10px;
+    transition: font-size 0.3s ease;
   }
 
   header .menu a:hover {
-    font-size: .7em;
+    font-size: 2.8em;
     color: #ffffff6c;
   }
 
@@ -67,24 +86,17 @@
     height: 50px;
     background: url(imagens/eu-pequeno.jpg) no-repeat;
     background-size: cover;
-    margin-left: 10px;
+    margin-left: 15px;
     border-radius: 12px;
   }
 
-  /*--------------BEM VINDO----------------*/
-
   .bemvindo {
     color: #FFFFFF;
-    margin-top: 0px;
-  }
-
-  .bemvindo h1 {
-    font-size: 2em;
-    text-shadow: 1px 1px 10px #0d66c2;
+    margin-top: 30px;
   }
   
   .bemvindo p {
-    font-size: 1.2em;
+    font-size: .8em;
   }
   
   
@@ -93,18 +105,8 @@
   }
 
   .botoesheader {
-    text-align: center;
     margin-top: 30px;
-    margin-left: 0px;
   }
-
-
-  .botoesheader .imagemh img {
-    width: 97vw;
-    height: 400px;
-    margin-right:15px;
-    border-radius: 5px;
-  } 
 
   .botao {
     display: flex;
@@ -165,8 +167,9 @@
 }
 .category-title {
     color: #f0f0f0;
-    font-size: 1em;
+    font-size: 2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 .container {
     width: 100%;
@@ -200,11 +203,11 @@
 }
 .portfolio-item {
     flex: 0 0 auto;
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #f0f0f0;
-    margin: 8px;
+    margin: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: transform 0.3s, background 0.3s;
@@ -231,34 +234,32 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 100px;
-  height: 300px;
-  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  margin-top: 250px;
   color: white;
-  margin-bottom: 500px;
 }
 
 .sobre h1 {
   width: 1240px;
-  text-align:center ;
-  font-size: 2em;
+  text-align: left;
+  font-size: 3em;
+  margin: 0px 0px;
   color: white;
 }
 
 .sobrepai {
   display: flex;
   flex-flow: row nowrap;
-  width: 0vw;
-  margin-left: 0px;
-  margin-right: 100px;
+  margin-left: 30px;
 }
 
 .sobre .sobrep {
-  width: 100px;
+  width: 400px;
   font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 2em;
+ font-size: 2.6em;
  color: #ffffffbd;
- margin-right: 0px;
+ margin-right: 20px;
  margin-bottom: 20px;
 }
 
@@ -268,20 +269,16 @@
   display: flex;
   width: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.3em;
-  margin-left: 80px;
-}
-
-.esconder {
-  display: none;
+  font-size: 2.4em;
+  margin-left: 40px;
 }
 
 .sobre .sobre-img {
-  display: none;
   position: relative;
-  width: 55px;
-  height: 200px;
-  top: 300px;
+  width: 250px;
+  height: 400px;
+  top: 150px;
+  right: 100px;
  border-radius: 20px;
 }
 
@@ -290,8 +287,8 @@
 .formacao {
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
-  height: 400px;
+  width: 100vw;
+  height: 600px;
   margin-top: 250px;
   margin-left: 7%;
   margin-bottom: 250px;
@@ -301,7 +298,7 @@
 .formacao h1 {
   width: 1240px;
   text-align: left;
-  font-size: 2em;
+  font-size: 3em;
   margin: 0px 0px;
   color: white;
 }
@@ -309,56 +306,48 @@
 .formacaopai {
   display: flex;
   flex-flow: row nowrap;
-  margin-left: 0px;
+  width: 100%;
+  margin-left: 30px;
 }
 
 .formacao .formacaop {
-  width: 180px;
+    justify-content: space-between;
+  width: 400px;
   font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 2em;
+ font-size: 2.9em;
  color: #ffffffbd;
- margin-right: 40px;
- margin-left: -20px;
+ margin-right: 20px;
  margin-bottom: 20px;
 }
 
-.formacao .formacaop p {
-  margin-bottom: 40px;
-}
 
+.esconder1 {
+    display: none;
+}
 
 
 .formacao .formacaor {
-  display: flex;
+    gap: 50px;
+    flex-wrap: nowrap;
   width: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.3em;
-  margin-right: 0px;
-  margin-left: 0px;
+  font-size: 2.8em;
+  margin-left: 40px;
 }
 
-.formacao .formacaor p {
-  margin-bottom: 10px;
+
+.formacaor p {
+    width: 100%;
 }
 
-.formacao .formacao-img {
-  display: none;
-  position: relative;
-  width: 250px;
-  height: 400px;
-  top: 100px;
-  right: 100px;
- border-radius: 20px;
-}
 
 /*------------------CONTATO-------------------------*/
-
 
 .contato {
   display: flex;
   flex-flow: column;
   text-align: left;
-  width: 100vw;
+  width: 100%;
   height: 700px;
   color: white;
   margin-top: 100px;
@@ -369,16 +358,16 @@
   width: 1240px;
   text-align: left;
   font-size: 3em;
-  margin: 15px 50px;
+  margin: 30px 100px;
 }
 
 .contato-pai {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: 600PX;
 }
 
 .contato img {
@@ -389,9 +378,8 @@
 .contato .contato-filho {
   display: flex;
   margin-top: 60px;
-  width: 350px;
   height: 100px;
-  margin-left: -100px;
+  margin-left: 30px;
   transition: transform 1s ease;
 }
 
@@ -403,20 +391,20 @@
   width: 400px;
   height: 100px;
   text-align: center;
-  font-size: .9em;
+  font-size: 1.5em;
   text-decoration: none;
   background-color: #c5c4c4;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 5px;
+  margin-left: 30px;
   border-radius: 50px;
 }
 
 .coluna-esquerda {
-  width: 40%;
+  width: 600px;
 }
 
 .coluna-direita {
-  width:40%;
+  width: 500px;
 
 }
 
@@ -462,7 +450,7 @@
   align-items: center;
   width: 100%;
   height: 50px;
-  margin-top: 440px;
+  margin-top: 50px;
   text-align: center;
   font-size: 1.3em;
   background-color: #221F1F;
@@ -477,40 +465,5 @@
 .final span {
   color: #0d66c2;
 }
-
-
-
-/*---------------------------mobile------------------------*/
-
-
-
-/* Ajustes para telas médias (768px até 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  header {
-    flex-flow: row wrap;
-    justify-content: space-between;
-    height: auto;
-  }
-
-  .menu {
-    justify-content: space-around;
-  }
-
-  .menu a {
-    font-size: 2.3em;
-  }
-
-  .sobre, .formacao, .contato {
-    padding: 30px;
-  }
-
-  .sobre .sobre-img, .formacao .formacao-img {
-    width: 230px;
-    height: auto;
-  }
-
-  .portfolio-item {
-    width: 280px;
-    height: 180px;
-  }
 }
+
