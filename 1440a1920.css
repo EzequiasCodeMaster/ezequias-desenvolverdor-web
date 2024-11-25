@@ -277,6 +277,7 @@
 }
 
 .sobre .sobre-img {
+  display: none;
   position: relative;
   width: 55px;
   height: 200px;
@@ -314,11 +315,15 @@
 .formacao .formacaop {
   width: 180px;
   font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 1.5em;
+ font-size: 2em;
  color: #ffffffbd;
- margin-right: 5px;
- margin-left: 0px;
+ margin-right: 40px;
+ margin-left: -20px;
  margin-bottom: 20px;
+}
+
+.formacao .formacaop p {
+  margin-bottom: 40px;
 }
 
 
@@ -327,9 +332,13 @@
   display: flex;
   width: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.7em;
+  font-size: 2.3em;
   margin-right: 0px;
   margin-left: 0px;
+}
+
+.formacao .formacaor p {
+  margin-bottom: 10px;
 }
 
 .formacao .formacao-img {
