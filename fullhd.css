@@ -238,113 +238,58 @@
 
 
 /*---------------------SOBRE------------*/
-
-.sobre {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100%;
-  height: 600px;
-  margin-top: 250px;
-  color: white;
+#sobre {
+  margin-bottom: 1300px;
 }
 
-.sobre h1 {
-  width: 1240px;
+.paizao {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  margin: 10px;
+  height: 300px;
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+
+#sobre h1 {
   text-align: left;
   font-size: 3em;
-  margin: 0px 0px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.pai {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  margin-right: 30px;
+  margin-bottom: 50px;
   color: white;
 }
 
-.sobrepai {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-left: 30px;
-}
-
-.sobre .sobrep {
-  width: 400px;
+.filhop {
+  width: 50%;
+  text-align: left;
   font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 2.4em;
- color: #ffffffbd;
- margin-right: 20px;
- margin-bottom: 20px;
+  font-size: 5em;
+  color: #ffffffbd;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 50px, 50px;
 }
 
-
-
-.sobre .sobrer {
-  display: flex;
-  width: auto;
+.filhor {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.4em;
+  font-size: 5.5em;
+  padding: 30px, 30px;
   margin-left: 40px;
 }
 
-.sobre .sobre-img {
-  position: relative;
-  width: 250px;
-  height: 400px;
-  top: 100px;
-  right: 100px;
- border-radius: 20px;
-}
-
-/*--------------------FORMAÇÃO-----------------------------*/
-
-.formacao {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: 600px;
-  margin-top: 250px;
-  margin-left: 7%;
-  margin-bottom: 250px;
-  color: white;
-}
-
-.formacao h1 {
-  width: 1240px;
-  text-align: left;
-  font-size: 3em;
-  margin: 0px 0px;
-  color: white;
-}
-
-.formacaopai {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-left: 30px;
-}
-
-.formacao .formacaop {
-  width: 400px;
-  font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 2.4em;
- color: #ffffffbd;
- margin-right: 20px;
- margin-bottom: 20px;
-}
 
 
-
-.formacao .formacaor {
-  display: flex;
-  width: auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.4em;
-  margin-left: 40px;
-}
-
-.formacao .formacao-img {
-  position: relative;
-  width: 250px;
-  height: 400px;
-  top: 100px;
-  right: 100px;
- border-radius: 20px;
-}
 
 /*------------------CONTATO-------------------------*/
 
@@ -356,13 +301,13 @@
   height: 700px;
   color: white;
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 500px;
 }
 
 .contato h1 {
   width: 1240px;
   text-align: left;
-  font-size: 3em;
+  font-size: 6em;
   margin: 30px 100px;
 }
 
@@ -372,17 +317,17 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600PX;
+  height: 700PX;
 }
 
 .contato img {
-  width: 100px;
+  width: 200px;
   border-radius: 50%;
 }
 
 .contato .contato-filho {
   display: flex;
-  margin-top: 60px;
+  margin-top: 150px;
   height: 100px;
   margin-left: 30px;
   transition: transform 1s ease;
@@ -393,10 +338,11 @@
 }
 
 .contato .texto-contato {
-  width: 400px;
-  height: 100px;
+  width: 80%;
+  height: 200px;
+  max-height: 400px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3em;
   text-decoration: none;
   background-color: #c5c4c4;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -405,11 +351,11 @@
 }
 
 .coluna-esquerda {
-  width: 600px;
+  width: 900px;
 }
 
 .coluna-direita {
-  width: 500px;
+  width: 900px;
 
 }
 

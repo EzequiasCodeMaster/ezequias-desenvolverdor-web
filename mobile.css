@@ -231,129 +231,103 @@
 
 /*---------------------SOBRE------------*/
 
-.sobre {
+.paizao {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 100px;
+  flex-flow: column;
+  width: 100vw;
   height: 300px;
-  margin-top: 50px;
-  color: white;
-  margin-bottom: 500px;
+  margin-top: 250px;
+  margin-bottom: 600px;
 }
 
-.sobre h1 {
-  width: 1240px;
-  text-align:center ;
-  font-size: 2em;
+#sobre h1 {
+  text-align: left;
+  font-size: 3em;
+  margin-bottom: 50px;
   color: white;
 }
 
-.sobrepai {
+.pai {
   display: flex;
   flex-flow: row nowrap;
-  width: 0vw;
-  margin-left: 0px;
-  margin-right: 100px;
-}
-
-.sobre .sobrep {
-  width: 100px;
-  font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 2em;
- color: #ffffffbd;
- margin-right: 0px;
- margin-bottom: 20px;
-}
-
-
-
-.sobre .sobrer {
-  display: flex;
+  justify-content: space-between;
   width: auto;
+  height: auto;
+  margin-right: 30px;
+  color: white;
+}
+
+
+.filhop {
+  width: 50%;
+  text-align: left;
+  font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
+  font-size: 2em;
+  color: #ffffffbd;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 50px, 50px;
+}
+
+.filhor {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.3em;
-  margin-left: 80px;
-}
-
-.esconder {
-  display: none;
-}
-
-.sobre .sobre-img {
-  display: none;
-  position: relative;
-  width: 55px;
-  height: 200px;
-  top: 300px;
- border-radius: 20px;
+  font-size: 2em;
+  margin-bottom: 50px;
+  padding: 30px, 30px;
+  margin-left: 40px;
 }
 
 /*--------------------FORMAÇÃO-----------------------------*/
 
-.formacao {
+#sobre {
+  margin-bottom: 1300px;
+}
+
+.paizao {
   display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: 400px;
-  margin-top: 250px;
-  margin-left: 7%;
-  margin-bottom: 250px;
-  color: white;
+  flex-flow: column;
+  width: 100vw;
+  margin: 10px;
+  height: 300px;
+  margin-top: 200px;
+  margin-bottom: 0px;
 }
 
-.formacao h1 {
-  width: 1240px;
+#sobre h1 {
   text-align: left;
-  font-size: 2em;
-  margin: 0px 0px;
+  font-size: 3em;
   color: white;
+  margin-bottom: 100px;
 }
 
-.formacaopai {
+.pai {
   display: flex;
   flex-flow: row nowrap;
-  margin-left: 0px;
-}
-
-.formacao .formacaop {
-  width: 180px;
-  font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
- font-size: 2em;
- color: #ffffffbd;
- margin-right: 40px;
- margin-left: -20px;
- margin-bottom: 20px;
-}
-
-.formacao .formacaop p {
-  margin-bottom: 40px;
-}
-
-
-
-.formacao .formacaor {
-  display: flex;
+  justify-content: space-between;
   width: auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.3em;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-.formacao .formacaor p {
+  height: auto;
+  margin-right: 30px;
   margin-bottom: 10px;
+  color: white;
 }
 
-.formacao .formacao-img {
-  display: none;
-  position: relative;
-  width: 250px;
-  height: 400px;
-  top: 100px;
-  right: 100px;
- border-radius: 20px;
+.filhop {
+  width: 50%;
+  text-align: left;
+  font-family: 'Playfair Display', serif; /* Ou 'Cinzel' */
+  font-size: 1.5em;
+  color: #ffffffbd;
+  margin-bottom: 5px;
 }
+
+.filhor {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7em;
+  margin-left: 40px;
+}
+
+
+
 
 /*------------------CONTATO-------------------------*/
 
